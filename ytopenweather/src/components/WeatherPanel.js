@@ -52,6 +52,9 @@ const WeatherPanel = () => {
     })
 
   }
+  return (
+    
+  )
 
 
 }
