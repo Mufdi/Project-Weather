@@ -10,3 +10,39 @@ body {
 .input-group{
   width: 60%;
 }
+
+.card {
+  max-width: 65%;
+}
+
+.card-title{
+  position: absolute;
+  padding: 20px;
+  color: #2F3544;
+}
+
+.card-date{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 60px;
+  color: #2F3544;
+}
+
+.card-temp{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 260px;
+  font-size: 50px;
+}
+
+.card-desc{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 320px;
+}
+
+.description{
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+}

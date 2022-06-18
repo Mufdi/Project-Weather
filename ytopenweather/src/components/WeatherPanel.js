@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import Form from "./Form"
+import Card from './Card'
 
 const WeatherPanel = () => {
-  let urlWeather = "https://api.openweathermap.org/data/2.5/weather?appid=8974ec08f6d8b03c7e2ebca4c3bc606e&lang=en"
+  let urlWeather = "https://api.openweathermap.org/data/2.5/weather?appid=8974ec08f6d8b03c7e2ebca4c3bc606e&units=metric&lang=en"
   let cityUrl = "&q="
-  let urlForecast = "https://api.openweathermap.org/data/2.5/forecast?appid=8974ec08f6d8b03c7e2ebca4c3bc606e&lang=en"
+  let urlForecast = "https://api.openweathermap.org/data/2.5/forecast?appid=8974ec08f6d8b03c7e2ebca4c3bc606e&units=metric&lang=en"
 
   const [weather, setWeather] = useState([])
   const [forecast, setForecast] = useState([])
@@ -53,8 +55,12 @@ const WeatherPanel = () => {
 
   }
   return (
-    
+    <React.Fragment>
+      <Form newLocation={getLocation} />
+      <Card showData={show} loadinData={loading} weather= {weather} forecast ={forecast} />
+    </React.Fragment>
   )
-
-
 }
+
+
+export default WeatherPanel
